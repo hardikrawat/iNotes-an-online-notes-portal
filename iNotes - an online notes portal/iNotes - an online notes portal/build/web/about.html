@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>iNotes</title>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
+        <meta name="author" content="3rd Wave Media">
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+              type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+        <!-- github acitivity css -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+        <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
+        <style>
+            body {
+                font-family: 'Lato', arial, sans-serif;
+                color: #434343;
+                background: #dae3e7;
+                font-size: 16px;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                color: #778492;
+            }
+
+            a {
+                color: #3aaa64;
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: #5f6b77;
+                color: #2d844e;
+            }
+
+            .btn,
+            a.btn {
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -ms-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                font-family: 'Montserrat', arial, sans-serif;
+                padding: 8px 16px;
+                font-weight: bold;
+            }
+
+            .btn .fa,
+            a.btn .fa {
+                margin-right: 5px;
+            }
+
+            .btn:focus,
+            a.btn:focus {
+                color: #fff;
+            }
+
+            a.btn-cta-primary,
+            .btn-cta-primary {
+                background: #54ba4e;
+                border: 1px solid #54ba4e;
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            a.btn-cta-primary:hover,
+            .btn-cta-primary:hover {
+                background: #49ac43;
+                border: 1px solid #49ac43;
+                color: #fff;
+            }
+
+            a.btn-cta-secondary,
+            .btn-cta-secondary {
+                background: #479fc8;
+                border: 1px solid #479fc8;
+                color: #fff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            a.btn-cta-secondary:hover,
+            .btn-cta-secondary:hover {
+                background: #3893bd;
+                border: 1px solid #3893bd;
+                color: #fff;
+            }
+
+            .text-highlight {
+                color: #32383e;
+            }
+
+            .label-theme {
+                background: #3aaa64;
+                font-size: 12px;
+            }
+
+            a.dotted-link {
+                border-bottom: 1px dotted #778492;
+                color: #778492;
+            }
+
+            a.dotted-link:hover {
+                text-decoration: none;
+                color: #49515a;
+            }
+
+            .header {
+                padding: 30px 0;
+                background: #f5f5f5;
+                border-top: 10px solid #778492;
+            }
+
+            .header .btn {
+                margin-top: 60px;
+                font-weight: bold;
+            }
+
+            .header .profile-image {
+                margin-right: 30px;
+                width: 300px;
+                height: 300px;
+                border-radius: 300px;
+            }
+
+            .header .profile-content .name {
+                color: #49515a;
+                font-size: 38px;
+                margin-bottom: 5px;
+                margin-top: 30px;
+            }
+
+            .header .profile-content .desc {
+                color: #778492;
+                font-family: "Lato", arial, sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+            .header .profile-content .social a {
+                background: #b0b7bf;
+                width: 36px;
+                height: 36px;
+                display: inline-block;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+                -moz-background-clip: padding;
+                -webkit-background-clip: padding-box;
+                background-clip: padding-box;
+                color: #fff;
+                text-align: center;
+            }
+
+            .header .profile-content .social a:hover {
+                background: #778492;
+            }
+
+            .header .profile-content .social a .fa {
+                font-size: 20px;
+                padding-top: 8px;
+            }
+
+            /* ======= Sections======= */
+            .sections-wrapper {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .section {
+                margin-bottom: 30px;
+            }
+
+            .section .section-inner {
+                background: #fff;
+                padding: 30px;
+                width: auto;
+            }
+
+            .section .heading {
+                margin-top: 0;
+                margin-bottom: 30px;
+                color: #545e69;
+                font-size: 24px;
+            }
+
+            .section .content .more-link .fa {
+                margin-right: 5px;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- ******HEADER****** -->
+        <header class="header">
+            <div class="container">
+                <img class="profile-image img-responsive pull-left" src="https://media-exp1.licdn.com/dms/image/C4E03AQF-vAVfmf-9xA/profile-displayphoto-shrink_800_800/0/1592166890729?e=1628726400&v=beta&t=zIsw6KCC61JO8HS5w245mbDI2DvYwnk5-DbCa3BgiPc" alt="James Lee" />
+                <div class="profile-content pull-left">
+                    <h1 class="name">Hardik Rawat</h1>
+                    <h5 class="desc">Android Developer • Electronics Engineer</h2>
+                        
+                </div>
+                <!--//profile-->
+                <a class="btn btn-cta-primary pull-right" href="mailto: hardik.education963@gmail.com" target="_blank">
+                    Contact Me</a>
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+
+        <div class="container sections-wrapper">
+            <div class="row">
+                <div class="primary col-md-8 col-sm-12 col-xs-12">
+                    <section class="about section">
+                        <div class="section-inner">
+                            <h2 class="heading">About Me</h2>
+                            <div class="content">
+                                <p> > This Product - iNotes (an online notes portal) is Designed and Developed by Me.<br>
+                                    <br>
+                                    > <strong>Explore my other Projects:</strong> <br><br>
+
+                                    <B>1) Student Plus – Android App on Google Play Store</B>
+                                    Technologies Used: Android Java, XML for UI/UX, Android SQLite
+                                    Description: This product is an Android Application, made by a team of three students.
+                                    It has Five section to ease study,
+                                    they are: Study Material, Exam Results, Basic Tools (like Calculator, Resistance Calc.,
+                                    Unit Convertor, etc.), Tools Plus (like
+                                    Notepad, Study Alarm, Drawing Tool, Todo Tasks, QR Scanner) and Quiz Section. The app
+                                    also has the feature of “Quick
+                                    Access” to directly navigate through the whole application.
+                                    <br>
+                                    Download URL: <a
+                                        href="https://play.google.com/store/apps/details?id=hrworks.innovations.studentplus">Here</a>
+                                    <br><br>
+                                    <B>2) WordPad++ – The Enhanced Word Processor</B>
+                                    Technologies Used: Java SE, Java Swing and AWT for UI/UX.
+                                    Description: This product is a Software Application which can run on Windows and Linux
+                                    (Tested). This Application has
+                                    three modules, they are: Normal Word Processing Mode, Code Editing Mode and Image
+                                    Processing Mode. All three modes
+                                    have their own internal rich sub-features.
+                                    <br>
+                                    Download URL:<a href="https://github.com/hardikrawat">Here</a>
+                                    <br><br>
+                                    <B>3) Arduino Based Basic Mobile Phone</B>
+                                    Technologies Used: C for Arduino and NodeMCU, Internet of Things, Digital Electronics,
+                                    Google Firebase
+                                    Description: This product is an attempt to implement theoretical electronics knowledge
+                                    to practical works. It has three
+                                    Modes, they are: The Calculator Mode (Arduino + Keypad + 16x2 LCD), The Calling Mode (no
+                                    Internet/Sim required) and
+                                    Cloud-Save Mode (NodeMCU + Keypad + Google Firebase).
+                                    <br><br>
+                                    <B>4) Advance Bus Detailing and Auto SMSing System</B>
+                                    Technologies Used: C for Arduino, NodeMCU, Embedded System, Digital Electronics,
+                                    Internet of Things
+                                    Description: This product is created to replace the Old Announcement Bus Detailing
+                                    Mechanism of colleges. In this we
+                                    developed a display board consisting of the WS2811 LED STRIPS and a home made seven
+                                    segment display to display the
+                                    area(route) and the bus number moving to that particular area. we also designed the
+                                    mechanism to send message to all
+                                    the students (which are registered in our database), before regular completion of
+                                    college (15 min.)and until the buses
+                                    starts moving out of the college and if there is any issue regarding sending message due
+                                    to network problem then it will
+                                    go on (retry) sending the message again and again until the message is received by the
+                                    student whose details are stored
+                                    in the database.
+                                    <br> <br>
+                                    <B>+ 2 more projects</B>
+                                </p>
+                            </div>
+                            <!--//content-->
+                        </div>
+                        <!--//section-inner-->
+                    </section>
+                    <!--//section-->
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
